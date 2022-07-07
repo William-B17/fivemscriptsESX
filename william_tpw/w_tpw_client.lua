@@ -5,11 +5,11 @@ RegisterCommand('w_way', function(source)
     
     if (blip ~= 0) then
         local coord = GetBlipCoords(blip)
-        local hejspiller = GetPlayerPed(-1)
+        local playerped = GetPlayerPed(-1)
         blipX = coord.x
         blipY = coord.y
         print(coord)
         print(coord.x, coord.y, 1)
-        SetPedCoordsKeepVehicle(hejspiller, coord.x, coord.y, 0.0);
+        SetPedCoordsKeepVehicle(playerped, coord.x, coord.y, 0.0);
     end 
 end)
